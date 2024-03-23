@@ -26,14 +26,24 @@ h3 {
   letter-spacing: -0.533px;
 }
 .slider {
-  width: 50%;
+  width: 97%;
+  border-radius: 20%;
+  height: 3rem;
 }
+.slider::-webkit-slider-runnable-track {
+  border-radius: 13px;
+  background: #d2cdcd;
+}
+.slider::-webkit-slider-thumb {
+  background: #c85402 !important;
+}
+
 .sliders-cont {
   align-items: center;
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  width: 30%;
+  width: 40%;
 }
 .top-con {
   display: flex;
@@ -42,7 +52,7 @@ h3 {
   gap: 2.6rem;
 }
 .span-con {
-  width: 50%;
+  width: 87%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
@@ -121,8 +131,70 @@ h3 {
   line-height: normal;
   letter-spacing: -0.333px;
 }
-.test {
-  max-width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
+@media (min-width: 90rem) {
+  body {
+    padding: 9.8rem 45rem 9.6rem 45rem;
+  }
+  .display {
+    height: 12.6rem;
+    color: #36362c;
+    text-align: right;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.933px;
+  }
+  .btn {
+    width: 93%;
+    color: #36362c;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.667px;
+  }
+  .delete {
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.467px;
+  }
+  .reset {
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.467px;
+  }
+  .equal {
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.467px;
+  }
+  .btn:hover {
+    cursor: pointer;
+  }
+  .reset:hover {
+    border-radius: 10px;
+    background: #62b5bc;
+    box-shadow: 0px -4px 0px 0px #1b6066 inset;
+  }
+  .delete:hover {
+    border-radius: 10px;
+    background: #62b5bc;
+    box-shadow: 0px -4px 0px 0px #1b6066 inset;
+  }
+  .equal:hover {
+    border-radius: 10px;
+    background: #ff8a38;
+    box-shadow: 0px -4px 0px 0px #873901 inset;
+  }
 }
