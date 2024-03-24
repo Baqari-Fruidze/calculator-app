@@ -20,3 +20,4 @@ const equal = document.querySelector(".equal");
 const dot = document.querySelector(".dot");
 const reset = document.querySelector("reset");
 const Delete = document.querySelector(".delete");
+const display = document.querySelector(".display");
