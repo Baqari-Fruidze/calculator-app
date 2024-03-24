@@ -1,6 +1,6 @@
 const slider = document.querySelector(".slider");
 const h3 = document.querySelector("h3");
-console.log(h3);
+const body = document.body;
 let sliderValue;
 slider.addEventListener("change", () => {
   sliderValue = Number(slider.value);
