@@ -39,6 +39,9 @@ container.addEventListener("click", (event) => {
     );
     return;
   }
+  if (display.textContent === "0") {
+    display.textContent = "";
+  }
   display.textContent = display.textContent + event.target.textContent;
   if (event.target.textContent === "+") {
     firstHalf = display.textContent.slice(0, display.textContent.length - 1);
