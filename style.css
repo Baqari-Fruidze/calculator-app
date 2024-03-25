@@ -12,10 +12,11 @@ body {
   background: #e6e6e6;
   /* min-height: 100vh; */
 }
+
 header {
-  margin-bottom: 3.2rem;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3.2rem;
 }
 h3 {
   color: #36362c;
@@ -25,29 +26,6 @@ h3 {
   line-height: normal;
   letter-spacing: -0.533px;
 }
-/* .slider {
-  appearance: none;
-  background: #d3d3d3;
-  -webkit-transition: 0.2s;
-  outline: none;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-  -webkit-appearance: none;
-  width: 97%;
-  border-radius: 20%;
-  height: 3rem;
-}
-.slider::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  border-radius: 13px;
-  background: #5a0909;
-  height: 2.6rem;
-}
-.slider::-webkit-slider-thumb {
-  background: red;
-  cursor: pointer;
-  margin-top: 0.5rem;
-} */
 
 .slider {
   -webkit-appearance: none;
@@ -107,18 +85,31 @@ h3 {
 .display {
   padding-right: 2.4rem;
   align-content: center;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background: #eee;
   width: 100%;
-  height: 8.8rem;
+  height: 6rem;
   color: #36362c;
   text-align: right;
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.667px;
+}
+section {
   margin-bottom: 2.4rem;
 }
+.secondary {
+  text-align: right;
+  padding-right: 2.4rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 2.8rem;
+  background: #eee;
+  font-size: 20px;
+}
+
 .main-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -142,6 +133,7 @@ h3 {
   line-height: normal;
   letter-spacing: -0.533px;
 }
+
 .reset {
   grid-column: 1/3;
   border-radius: 5px;
@@ -171,6 +163,26 @@ h3 {
   line-height: normal;
   letter-spacing: -0.333px;
 }
+/* .dark {
+  background: #3a4663 !important;
+}
+.dark h3 {
+  color: #fff;
+  text-align: left;
+  font-family: "League Spartan";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.533px;
+}
+.dark .secondary {
+  background: #181f33;
+}
+.dark .display {
+  background: #181f33;
+} */
+
 @media (min-width: 90rem) {
   body {
     padding: 9.8rem 45rem 9.6rem 45rem;
