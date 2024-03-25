@@ -2,11 +2,15 @@ const slider = document.querySelector(".slider");
 const body = document.body;
 slider.addEventListener("change", () => {
   sliderValue = Number(slider.value);
-  if (sliderValue === 3) {
+  if (sliderValue === 1) {
     document.body.classList.add("dark");
   }
   if (sliderValue === 2) {
     document.body.classList.remove("dark");
+    document.body.classList.remove("purple");
+  }
+  if (sliderValue === 3) {
+    document.body.classList.add("purple");
   }
 });
 
