@@ -31,6 +31,30 @@ let firstHalf;
 let secondHalf;
 
 container.addEventListener("click", (event) => {
+  if (
+    secondaryDisplay.textContent[secondaryDisplay.textContent.length - 1] ===
+      "+" &&
+    event.target.textContent === "+"
+  )
+    return;
+  if (
+    secondaryDisplay.textContent[secondaryDisplay.textContent.length - 1] ===
+      "-" &&
+    event.target.textContent === "-"
+  )
+    return;
+  if (
+    secondaryDisplay.textContent[secondaryDisplay.textContent.length - 1] ===
+      "*" &&
+    event.target.textContent === "*"
+  )
+    return;
+  if (
+    secondaryDisplay.textContent[secondaryDisplay.textContent.length - 1] ===
+      "/" &&
+    event.target.textContent === "/"
+  )
+    return;
   if (event.target.textContent.length > 5) return;
   if (event.target.textContent === "Del") {
     display.textContent = display.textContent.slice(

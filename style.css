@@ -11,6 +11,8 @@ body {
   padding: 3rem 2.4rem 3.1rem 2.4rem;
   background: #e6e6e6;
   /* min-height: 100vh; */
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 header {
@@ -465,6 +467,7 @@ section {
 @media (min-width: 90rem) {
   body {
     padding: 9.8rem 45rem 9.6rem 45rem;
+    max-width: 144rem;
   }
   .display {
     height: 12.6rem;
